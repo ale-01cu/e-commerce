@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  app-backend:
+    build: .
+    container_name: app-backend
+    image: app-backend:0.0.2
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 80:8000

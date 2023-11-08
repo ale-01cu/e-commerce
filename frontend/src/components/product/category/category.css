@@ -1,0 +1,88 @@
+.section-category {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem;
+  height: 10%;
+  
+}
+
+.section-category__icecream,
+.section-category__bread {
+  display: flex;
+  font-family: "Montserrat Alternates", sans-serif;
+  justify-content: center;
+  align-items: center;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.section-category__bread p {
+  color: #c5854b;
+  font-weight: 600;
+  font-size: 22px;
+  font-style: normal;
+  font-family: Inter;
+}
+
+.section-category__icecream p {
+  color: #456a9d;
+  font-weight: 600;
+  font-size: 22px;
+  font-style: normal;
+}
+
+.section-category__bread p,
+.section-category__icecream p {
+  margin-left: 5px;
+}
+.section-category__icecream img,
+.section-category__bread img {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+/******************************************************************************/
+/*                         MEDIA QUERY                                        */
+/******************************************************************************/
+
+/************************************/
+/*            SCREEN 480            */
+/************************************/
+@media screen and (max-width: 480px) {
+  .section-category {
+    gap: 10px;
+    margin: 30px auto;
+  }
+  .section-category__icecream,
+  .section-category__bread {
+    margin: 0 30px;
+  }
+
+  .section-category__bread p,
+  .section-category__icecream p {
+    font-size: 12px;
+  }
+
+  .section-category__icecream img,
+  .section-category__bread img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+}
+
+/************************************/
+/*            SCREEN 480            */
+/************************************/
+@media screen and (min-height: 680px) {
+  .section-category {
+    margin: 60px 40px;
+  }
+}
+@media screen and (min-height: 880px) {
+  .section-category {
+    margin: 80px 40px;
+  }
+}

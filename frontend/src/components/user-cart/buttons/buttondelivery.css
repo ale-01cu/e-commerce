@@ -1,0 +1,39 @@
+.buttondelivery {
+  text-align: center;
+  border-radius: 40px;
+  border: 1px solid #747474;
+  width: 30%;
+  height: 37px;
+  margin: 0 1rem;
+  background-color:transparent;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Inter", sans-serif;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+.buttondelivery:active,
+.buttondelivery:valid,
+.buttondelivery:focus{
+  background: transparent;
+  border: 1px solid #747474;
+  outline:#747474;
+  cursor: pointer;
+}
+
+
+.buttondelivery option {
+  font-size: 16px;
+  background: rgb(206, 223, 250, 0.5);
+  color: #333;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.buttondelivery option:checked {
+  background-color: #337ab7;
+  color: #fff;
+}

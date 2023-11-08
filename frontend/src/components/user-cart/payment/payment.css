@@ -1,0 +1,252 @@
+.container-payment {
+  width: 60%;
+  height: 20%;
+  margin: 10px auto;
+}
+
+.section-payment {
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.container-ticket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-color: #ffec89;
+  border-radius: 20px;
+  filter: drop-shadow(-1px 2px 5px rgba(94, 96, 100, 0.1))
+    drop-shadow(-4px 8px 9px rgba(94, 96, 100, 0.09))
+    drop-shadow(-9px 17px 12px rgba(94, 96, 100, 0.05))
+    drop-shadow(-16px 31px 14px rgba(94, 96, 100, 0.01))
+    drop-shadow(-26px 48px 15px rgba(94, 96, 100, 0));
+}
+
+.container-ticket #hr {
+  box-sizing: content-box;
+  overflow: visible;
+  width: 10rem;
+  border: 1px solid;
+  border-color: rgba(31, 31, 31, 0.208);
+}
+
+.container-ticket-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  height: 10%;
+}
+
+.small-information {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 90%;
+  height: auto;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.delibery {
+  margin-right: 4%;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.cost-delibery {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.container-ticket-info ._ {
+  width: 220px;
+  height: 1px;
+  margin-left: 0.5rem;
+  margin-top: 1px;
+  background: #24232325;
+}
+
+.pay-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 20%;
+  margin-bottom: 20px;
+}
+
+.pay-container .total-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  font-size: 10px;
+  width: 100%;
+  height: 100%;
+  margin: 8px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.pay-container .total-container .total-amount {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.pay-container .total-container .total-cost {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 3px 0;
+}
+
+.pay-container button {
+  width: 44%;
+  height: 45px;
+  border-radius: 14px;
+  text-align: center;
+  border: none;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  transform: translateY(20px) translateX(10px) scale(1);
+  cursor: pointer;
+  margin-bottom: 15px;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  
+  
+}
+
+
+.pay-container button:active {
+  width: 46%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  box-shadow: -4px 6px 16px 0px rgba(109, 8, 8, 0.1),
+    -16px 24px 28px 0px rgba(109, 8, 8, 0.09),
+    -35px 53px 38px 0px rgba(109, 8, 8, 0.05),
+    -63px 94px 45px 0px rgba(109, 8, 8, 0.01),
+    -99px 147px 50px 0px rgba(109, 8, 8, 0);
+}
+
+button{
+  transition: .2s;
+}
+
+/******************************************************************************/
+/*                         MEDIA QUERY                                        */
+/******************************************************************************/
+@media screen and (min-width: 1366px) {
+  .pay-container button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: -4px 6px 16px 0px rgba(109, 8, 8, 0.1),
+      -16px 24px 28px 0px rgba(109, 8, 8, 0.09),
+      -35px 53px 38px 0px rgba(109, 8, 8, 0.05),
+      -63px 94px 45px 0px rgba(109, 8, 8, 0.01),
+      -99px 147px 50px 0px rgba(109, 8, 8, 0);
+  }
+}
+
+/************************************/
+/*            SCREEN 1366           */
+/************************************/
+@media screen and (max-width: 1366px) {
+  .container-ticket #hr {
+    width: 8rem;
+  }
+
+  .pay-container .total-container {
+    margin: 3px 0;
+  }
+
+  .pay-container .total-container .total-cost {
+    font-size: 12px;
+  }
+
+  .pay-container .total-container .total-amount {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+}
+
+/*************************************/
+/*            SCREEN 480            */
+/************************************/
+
+@media screen and (max-width: 480px) {
+  .container-payment {
+    width: 55%;
+    height: 20%;
+    margin: 10px auto;
+  }
+
+  .section-payment {
+    margin: 15px auto;
+  }
+
+  .container-ticket {
+    padding: 10px;
+  }
+
+  .container-ticket #hr {
+    width: 70%;
+  }
+
+  .pay-container button {
+    height: 35px;
+    width: 50%;
+  }
+
+  .pay-container .total-container {
+    margin-top: 1rem;
+  }
+  .pay-container .total-container .total-cost {
+    font-size: 11px;
+  }
+
+  .pay-container button:active {
+    background-color: black;
+    color: white;
+    box-shadow: -4px 6px 16px 0px rgba(109, 8, 8, 0.1),
+      -16px 24px 28px 0px rgba(109, 8, 8, 0.09),
+      -35px 53px 38px 0px rgba(109, 8, 8, 0.05),
+      -63px 94px 45px 0px rgba(109, 8, 8, 0.01),
+      -99px 147px 50px 0px rgba(109, 8, 8, 0);
+  }
+}
+
+/************************************/
+/*            SCREEN 400            */
+/************************************/
+
+@media screen and (max-width: 400px) {
+  .container-payment {
+    width: 70%;
+    margin: 0 auto 20px;
+  }
+
+  .pay-container button {
+    width: 50%;
+  }
+}

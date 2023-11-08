@@ -1,0 +1,181 @@
+:root {
+  --Grays: #808080;
+  --gray-1: #f8f8f8;
+}
+
+.container-login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(252deg, #99b7ce 0%, #db9989 63.11%);
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.helado {
+  display: flex;
+  position: absolute;
+  width: 14.625rem;
+  height: 14.625rem;
+  transform: translateX(14rem) translateY(6rem) rotate(-12.137deg);
+  transition: 1s;
+}
+
+.pan1 {
+  display: flex;
+  position: absolute;
+  transform: translateX(-13rem) translateY(9rem) rotate(-7.137deg);
+  width: 400px;
+  height: 300px;
+  transition: 1s;
+}
+
+.pan2 {
+  display: flex;
+  position: absolute;
+  transform: translateX(13rem) translateY(-15rem) rotate(-7.137deg);
+  width: 11.9375rem;
+  height: 11.125rem;
+  transition: 1s;
+}
+
+.create-by-dreamspace {
+  position: absolute;
+  display: flex;
+  width: 400px;
+  height: 83px;
+  bottom: 50px;
+  right: 0;
+  border-radius: 25px 0 0 25px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: -7px 5px 18px 0px rgba(160, 44, 44, 0.1),
+    -26px 19px 32px 0px rgba(160, 44, 44, 0.09),
+    -59px 42px 44px 0px rgba(160, 44, 44, 0.05),
+    -105px 75px 52px 0px rgba(160, 44, 44, 0.01),
+    -164px 118px 57px 0px rgba(160, 44, 44, 0);
+  text-decoration: none;
+}
+
+.create-by-dreamspace-info {
+  width: 80%;
+  height: 100%;
+  margin-left: 20px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.create-by-dreamspace-info .buy-coffe-p {
+  margin: 5px 0;
+  font-family: "Inter", sans-serif;
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.create-by-dreamspace-info .create-by-p {
+  color: #4b5563;
+  font-size: 14px;
+  margin: 5px 0;
+  font-family: "Inter", sans-serif;
+}
+
+.div-buy-coffe {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.div-buy-coffe .buy-coffe-svg {
+  width: 50px;
+}
+
+/******************************************************************************/
+/*                         MEDIA QUERY                                        */
+/******************************************************************************/
+
+/************************************/
+/*            SCREEN 1024           */
+/************************************/
+
+@media (max-width: 1024px) {
+  .create-by-dreamspace {
+    width: 300px;
+    height: 68px;
+    bottom: 20px;
+  }
+
+  .create-by-dreamspace-info .buy-coffe-p {
+    font-size: 16px;
+  }
+
+  .create-by-dreamspace-info .create-by-p {
+    font-size: 12px;
+  }
+
+  .div-buy-coffe .buy-coffe-svg {
+    width: 50px;
+  }
+}
+
+/************************************/
+/*            SCREEN 723            */
+/************************************/
+
+@media (max-width: 723px) {
+  .helado {
+    transform: translateX(4rem) translateY(14rem) rotate(-12.137deg) scale(0.9);
+  }
+
+  .pan1 {
+    transform: translateX(-9rem) translateY(2rem) rotate(-7.137deg);
+  }
+
+  .pan2 {
+    transform: translateX(5rem) translateY(-13rem) rotate(-7.137deg);
+  }
+  .create-by-dreamspace {
+    width: 250px;
+    height: 68px;
+    bottom: 20px;
+  }
+}
+
+/************************************/
+/*            SCREEN 400            */
+/************************************/
+@media (max-width: 400px) {
+  .pan2 {
+    transform: translateX(4rem) translateY(-15rem) rotate(-7.137deg) scale(0.6);
+  }
+  .helado {
+    width: 9.625rem;
+    height: 9.625rem;
+    transform: translateX(4rem) translateY(15rem) rotate(-12.137deg);
+  }
+  .pan1 {
+    transform: translateX(-5rem) translateY(2rem) rotate(-7.137deg) scale(0.7);
+  }
+
+  .create-by-dreamspace {
+    width: 200px;
+    height: 68px;
+    bottom: 10px;
+  }
+
+  .create-by-dreamspace-info .buy-coffe-p {
+    font-size: 14px;
+  }
+
+  .create-by-dreamspace-info .create-by-p {
+    font-size: 10px;
+  }
+
+  .div-buy-coffe .buy-coffe-svg {
+    width: 30px;
+  }
+}

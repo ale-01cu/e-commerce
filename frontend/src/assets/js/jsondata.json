@@ -1,0 +1,647 @@
+{
+  "municipios": [
+    {
+      "municipio": "Guanabacoa",
+      "zonas": [
+        {
+          "zona": "Mañana",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "Habana Nueva",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "Cruz verde",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "La Jata",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "Naranjo",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "Chivas",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "Roble",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "La lima",
+          "tarifa": 600.0
+        },
+        {
+          "zona": "Ricabart",
+          "tarifa": 600.0
+        },
+        {
+          "zona": "Santa fe",
+          "tarifa": 650.0
+        },
+        {
+          "zona": "Minas",
+          "tarifa": 650.0
+        },
+        {
+          "zona": "Barreras",
+          "tarifa": 700.0
+        },
+        {
+          "zona": "La gallega",
+          "tarifa": 800.0
+        },
+        {
+          "zona": "Arango",
+          "tarifa": 800.0
+        }
+      ]
+    },
+    {
+      "municipio": "San Miguel",
+      "zonas": [
+        {
+          "zona": "Barrio Obrero",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Virgen del Camino",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "Juanelo",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Jacomino",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Ciudamar",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Carolina",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Luyano Moderno",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "La Korea",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "Cuevita",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "El Mangal",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Caballo Blanco",
+          "tarifa": 300.0
+        },
+        {
+          "zona": "San Matías",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Veracruz",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Diezmero",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "San Francisco de Paula",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "Revoledo",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Canbute",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Mercedita",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Villa Alegre",
+          "tarifa": 400.0
+        }
+      ]
+    },
+    {
+      "municipio": "Playa",
+      "zonas": [
+        {
+          "zona": "Kholy",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Miramar",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Buena Vista",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Tropicana",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Romerillo",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Siboney",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Atabey",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Flores",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Jaimanitas",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "Santa Fe",
+          "tarifa": 600.0
+        },
+        {
+          "zona": " Cangrejeras",
+          "tarifa": 700.0
+        }
+      ]
+    },
+    {
+      "municipio": "Marianao",
+      "zonas": [
+        {
+          "zona": "Puentes Grandes",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "El Lucillo",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "Belén",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "Santa Felicia",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "Pogolotti",
+          "tarifa": 300.0
+        },
+        {
+          "zona": "Los Hornos",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "El Palmar",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "Zamora",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "Coco Solo",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "Los Pocitos",
+          "tarifa": 350.0
+        }
+      ]
+    },
+    {
+      "municipio": "Boyeros",
+      "zonas": [
+        {
+          "zona": "Miraflores",
+          "tarifa": 250.0
+        },
+        {
+          "zona": "Embill",
+          "tarifa": 250.0
+        },
+        {
+          "zona": "Aldabo",
+          "tarifa": 250.0
+        },
+        {
+          "zona": "La Fortuna",
+          "tarifa": 300.0
+        },
+        {
+          "zona": "Alta Habana",
+          "tarifa": 250.0
+        },
+        {
+          "zona": "Puente Nuevo",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Reloj Clud",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Caldevila",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "Cujae",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "Fontanar",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "Abel Santamaría",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "Wajay",
+          "tarifa": 600.0
+        },
+        {
+          "zona": "El Chico",
+          "tarifa": 600.0
+        },
+        {
+          "zona": "El Cano",
+          "tarifa": 650.0
+        },
+        {
+          "zona": "El Morado",
+          "tarifa": 650.0
+        },
+        {
+          "zona": "Valle Grande",
+          "tarifa": 800.0
+        },
+        {
+          "zona": "Río Verde",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "Mazorra",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "Baluarte",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "Rancho Boyeros",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "1 de Mayo",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Mulgoba",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "Santiago de la Vegas",
+          "tarifa": 700.0
+        },
+        {
+          "zona": "Rincón",
+          "tarifa": 700.0
+        },
+        {
+          "zona": "El Berenguel",
+          "tarifa": 300.0
+        },
+        {
+          "zona": "Calabazar",
+          "tarifa": 300.0
+        },
+        {
+          "zona": "El Globo",
+          "tarifa": 350.0
+        }
+      ]
+    },
+    {
+      "municipio": "La Lisa",
+      "zonas": [
+        {
+          "zona": "El Hueco",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "Versalles",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "Alturas de la Lisa",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "El Balcón",
+          "tarifa": 300.0
+        },
+        {
+          "zona": "San Agustín",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "La Coronela",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Arroyo Arenas",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "Novia del Mediodía",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "Barbosa",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "Punta Brava",
+          "tarifa": 600.0
+        }
+      ]
+    },
+    {
+      "municipio": "Cotorro",
+      "zonas": [
+        {
+          "zona": "Cruz Verde",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "San Pedro",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "La Lolita",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "La Campana",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "Lotería",
+          "tarifa": 400.0
+        },
+        {
+          "zona": "Alberro",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "Loma de Tierra",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "La Pesa",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "Hatuey",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "Cuatro Caminos",
+          "tarifa": 500.0
+        }
+      ]
+    },
+    {
+      "municipio": "10 de Octubre",
+      "zonas": [
+        {
+          "zona": "Mónaco",
+          "tarifa": 200.0
+        },
+        {
+          "zona": "Sevillano",
+          "tarifa": 200.0
+        },
+        {
+          "zona": "Santo Suárez",
+          "tarifa": 200.0
+        },
+        {
+          "zona": "Víbora",
+          "tarifa": 150.0
+        },
+        {
+          "zona": "Lawton",
+          "tarifa": 250.0
+        },
+        {
+          "zona": "Luyano",
+          "tarifa": 250.0
+        }
+      ]
+    },
+    {
+      "municipio": "Cerro",
+      "zonas": [
+        {
+          "zona": "Cerro",
+          "tarifa": 250.0
+        }
+      ]
+    },
+    {
+      "municipio": "Centro Habana",
+      "zonas": [
+        {
+          "zona": "Centro Habana",
+          "tarifa": 300.0
+        }
+      ]
+    },
+    {
+      "municipio": "Habana Vieja",
+      "zonas": [
+        {
+          "zona": "Habana Vieja",
+          "tarifa": 300.0
+        }
+      ]
+    },
+    {
+      "municipio": "Plaza de la Revolución",
+      "zonas": [
+        {
+          "zona": "Plaza de la Revolución",
+          "tarifa": 350.0
+        }
+      ]
+    },
+    {
+      "municipio": "Regla",
+      "zonas": [
+        {
+          "zona": "Regla",
+          "tarifa": 400.0
+        }
+      ]
+    },
+    {
+      "municipio": "Arroyo Naranjo",
+      "zonas": [
+        {
+          "zona": "Lubumba",
+          "tarifa": 150.0
+        },
+        {
+          "zona": "Los Pinos",
+          "tarifa": 150.0
+        },
+        {
+          "zona": "Vieja Linda",
+          "tarifa": 150.0
+        },
+        {
+          "zona": "La Palma",
+          "tarifa": 100.0
+        },
+        {
+          "zona": "Víbora Park",
+          "tarifa": 100.0
+        },
+        {
+          "zona": "Párraga",
+          "tarifa": 150.0
+        },
+        {
+          "zona": "Mantilla",
+          "tarifa": 150.0
+        },
+        {
+          "zona": "El Moro",
+          "tarifa": 150.0
+        },
+        {
+          "zona": "Calvario",
+          "tarifa": 200.0
+        },
+        {
+          "zona": "Eléctrico",
+          "tarifa": 250.0
+        },
+        {
+          "zona": "Parcelación",
+          "tarifa": 250.0
+        },
+        {
+          "zona": "Las Guasimas",
+          "tarifa": 350.0
+        },
+        {
+          "zona": "Managua",
+          "tarifa": 450.0
+        },
+        {
+          "zona": "Santa Amalia",
+          "tarifa": 100.0
+        },
+        {
+          "zona": "Ciro Frías",
+          "tarifa": 150.0
+        },
+        {
+          "zona": "Poey",
+          "tarifa": 150.0
+        },
+        {
+          "zona": "Alday",
+          "tarifa": 200.0
+        },
+        {
+          "zona": "Alkázar",
+          "tarifa": 150.0
+        },
+        {
+          "zona": "La Guinera",
+          "tarifa": 150.0
+        },
+        {
+          "zona": "Capri",
+          "tarifa": 150.0
+        },
+        {
+          "zona": "Las Cañas",
+          "tarifa": 200.0
+        }
+      ]
+    },
+    {
+      "municipio": "Habana del Este",
+      "zonas": [
+        {
+          "zona": "Bahía",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "El Guiteras",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "Villa Panamericana",
+          "tarifa": 600.0
+        },
+        {
+          "zona": "Cojimar",
+          "tarifa": 600.0
+        },
+        {
+          "zona": "Camilo Cienfuegos",
+          "tarifa": 600.0
+        },
+        {
+          "zona": "Berroa",
+          "tarifa": 500.0
+        },
+        {
+          "zona": "Alamar",
+          "tarifa": 700.0
+        },
+        {
+          "zona": "Guanabo",
+          "tarifa": 100.00
+        },
+        {
+          "zona": "Campo Florido",
+          "tarifa": 100.00
+        }
+      ]
+    }
+  ]
+}

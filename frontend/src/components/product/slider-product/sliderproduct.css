@@ -1,0 +1,89 @@
+.slider_container {
+  width: 100%;
+  height: 67%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  margin-bottom: 20rem;
+  background-color: rgba(231, 168, 134, 0);
+}
+
+.react-multi-carousel-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  overflow: hidden;
+  position: relative;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.react-multi-carousel-list .react-multi-carousel-track {
+  margin-bottom: 7rem;
+}
+
+.react-multi-carousel-list .react-multiple-carousel__arrow {
+  width: 40px;
+  height: 40px;
+  min-width: none;
+  min-height: none;
+  box-shadow: #000 0 4px 33px -5px;   
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; 
+}
+
+.react-multi-carousel-list .react-multiple-carousel__arrow--right {
+  transform: translateX(20px);
+}
+
+.react-multi-carousel-list .react-multiple-carousel__arrow--right:active {
+  transform: translateX(35px);
+}
+
+.react-multi-carousel-list .react-multiple-carousel__arrow--left {
+  transform: translateX(-20px);
+}
+
+.react-multi-carousel-list .react-multiple-carousel__arrow--left:active {
+  transform: translateX(-35px);
+}
+
+.card-wrapper {
+  display: inline-block;
+  margin: 0 10px; /* Ajusta el margen según sea necesario */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.slider_container:hover .card-wrapper:not(:hover):first-child,
+.slider_container:hover .card-wrapper:not(:hover):last-child {
+  opacity: 0.5;
+}
+
+.slider_container:hover
+  .card-wrapper:not(:hover):not(:first-child):not(:last-child) {
+  opacity: 0.8;
+}
+
+
+
+
+/******************************************************************************/
+/*                         MEDIA QUERY                                        */
+/******************************************************************************/
+
+/************************************/
+/*            SCREEN 480            */
+/************************************/
+@media screen and (max-width: 480px) {
+  .react-multi-carousel-list .react-multiple-carousel__arrow {
+    margin: 10px;
+  }
+
+  .react-multi-carousel-item {
+    width: 380px;
+  }
+}

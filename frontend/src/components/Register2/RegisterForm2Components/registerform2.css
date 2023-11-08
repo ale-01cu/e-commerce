@@ -1,0 +1,309 @@
+/* 
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.register-form-2-container {
+    width: 25.625rem;
+    height: 29.3125rem;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(121, 121, 121, 0.432);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5.6px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin: 1rem;
+}
+
+.register-form-2-container h1 {
+    text-align: center;
+    margin: 2rem 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: var(--gray-1);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+
+}
+
+ form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 270px;
+    height: fit-content;
+}
+
+
+
+
+form div .box-input{
+    margin: .7rem .2rem;
+    width: 45%;
+    display: flex;
+    justify-content: start;
+}
+
+
+
+form div .box-input #register2_date,
+form div .box-input #register2_password,
+form div .box-input #register2_confirmpassword{
+    z-index: 10;
+    margin: 0;
+    width: 100%;
+    height: 15px;
+    padding: 15px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    border-bottom: solid #414141 0.5px;
+    color: #50505000;
+    outline: none;
+    transition: 1.5s;
+
+}
+
+
+
+.register-form-2-container .box-input span{
+    opacity: 1;
+    position: absolute;
+    padding-left: 10px;
+    padding-bottom: 25px;
+    color: #fff;
+    font-size: 18px;
+    transition: 1s;
+    
+    
+}
+
+    .box-input #register2_date:active ,
+    .box-input #register2_date:focus ,
+    .box-input #register2_date:valid,
+    .box-input #register2_confirmpassword:active ,
+    .box-input #register2_confirmpassword:focus ,
+    .box-input #register2_confirmpassword:valid,
+    .box-input #register2_password:valid ,
+    .box-input #register2_password:active,
+    .box-input #register2_password:focus{
+    color: #505050;
+}
+
+    .box-input #register2_date:active ~ span,
+    .box-input #register2_date:focus ~ span,
+    .box-input #register2_date:valid ~ span,
+    .box-input #register2_password:active ~ span,
+    .box-input #register2_password:focus ~ span,
+    .box-input #register2_password:valid ~ span,
+    .box-input #register2_confirmpassword:valid ~span,
+    .box-input #register2_confirmpassword:active ~span,
+    .box-input #register2_confirmpassword:focus ~span{
+    padding-left: 0;
+    
+}
+
+.box-input{
+    display: flex;
+    justify-content: start;
+}
+
+.box-input input{
+    color: #50505000;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+
+a {
+    display: flex;
+    justify-content: end;
+    padding-top: 2rem;
+    width: 250px;
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+}
+
+a:hover,
+a:focus,
+a:active{
+    color: #fff;
+}
+
+.register-form-2-container .button-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    margin-top: 4rem;
+}
+
+button[type="submit"] {
+    
+    color: rgba(71, 71, 71, 0.89);
+    border-radius: 25px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.next {
+    display: none;
+}
+
+
+
+.box{
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    
+  }
+  
+  
+  .box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(0deg, transparent,  rgb(9, 19, 156));
+    transform-origin: bottom right;
+    animation: animate  3s linear infinite;
+  }
+  
+  
+  
+  .box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(0deg, transparent,rgb(238, 6, 106));
+    transform-origin: bottom right;
+    animation: animate  3s linear infinite;
+    animation-delay: -1.5s;
+  }
+
+
+
+  
+  @keyframes animate{
+    0%{
+      transform: rotate(0deg);
+    }
+    
+    100%{
+      transform: rotate(360deg);
+    }
+  
+  }
+
+
+.box p{
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+.box-active{
+    display: flex;
+}
+
+
+
+@media (max-width: 723px) {
+
+.form-container{
+    margin: 1rem;
+    width: 22.625rem;
+    height: 27.3125rem;
+    
+}
+
+
+
+}
+
+
+@media (max-width: 400px) {
+
+    .form-container{
+        margin: 1rem;
+        width: 15.625rem;
+        height: 24.3125rem;
+        
+    }
+
+    .register-form-2-container h1 {
+        font-size: 30px;
+    }
+    
+    input {
+        margin-top: 10px;
+        width: 12.625rem;
+        
+    }  
+    
+    a {
+        display: flex;
+        justify-content: end;
+        padding-top: 2rem;
+        width: 200px;
+        color: black;
+        text-decoration: none;
+    }
+
+    span{
+        font-size: 13px;
+        
+    } 
+    
+
+    form div {
+        display: flex;
+        width: 12.625rem;
+        min-width: 10.625rem;
+        flex-direction: row;
+        margin:1rem 0;    
+    }
+
+    form div .box-input{
+        width: 100%;
+        
+    }
+
+    .register-form-2-container .button-container{
+        margin-top: 3rem;
+    }
+} */

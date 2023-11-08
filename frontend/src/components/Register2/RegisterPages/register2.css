@@ -1,0 +1,92 @@
+/* :root {
+    --Grays: #808080;
+    --gray-1: #f8f8f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    
+}
+
+.helado {
+    display: flex;
+    position: absolute;
+    width: 14.625rem;
+    height: 14.625rem;
+    transform: translateX(14rem) translateY(6rem) rotate(-12.137deg);
+    transition: 1s;
+    
+    
+}
+
+.pan1 {
+    display: flex;
+    position: absolute;
+    transform: translateX(-13rem) translateY(9rem) rotate(-7.137deg);
+    width: 400px;
+    height: 300px;
+    transition: 1s;
+}
+
+.pan2 {
+    display: flex;
+    position: absolute;
+    transform: translateX(13rem) translateY(-15rem) rotate(-7.137deg);
+    width: 11.9375rem;
+    height: 11.125rem;
+    transition: 1s;
+}
+
+
+@media (max-width: 723px) {
+    
+        .helado {
+            transform: translateX(4rem) translateY(14rem) rotate(-12.137deg) scale(.9);
+        }
+        
+        .pan1 {
+            transform: translateX(-9rem) translateY(2rem) rotate(-7.137deg);
+        }
+        
+        .pan2 {
+            transform: translateX(5rem) translateY(-13rem) rotate(-7.137deg);
+        }
+    
+    }
+    
+    
+    @media (max-width: 400px) {
+    
+        .pan2 {
+            transform: translateX(4rem) translateY(-15rem) rotate(-7.137deg) scale(.6);  
+        }
+        .helado {
+            width: 9.625rem;
+            height: 9.625rem;
+            transform: translateX(4rem) translateY(15rem) rotate(-12.137deg);
+            
+            
+        }
+        .pan1 {
+            transform: translateX(-5rem) translateY(2rem) rotate(-7.137deg) scale(.7);
+        }
+        
+    
+    }
+ */

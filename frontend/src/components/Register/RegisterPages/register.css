@@ -1,0 +1,85 @@
+:root {
+  --Grays: #808080;
+  --gray-1: #f8f8f8;
+}
+
+.container-form {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  background: linear-gradient(252deg, #99b7ce 0%, #db9989 63.11%);
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.helado {
+  display: flex;
+  position: absolute;
+  width: 14.625rem;
+  height: 14.625rem;
+  transform: translateX(14rem) translateY(6rem) rotate(-12.137deg);
+  transition: 1s;
+}
+
+.pan1 {
+  display: flex;
+  position: absolute;
+  transform: translateX(-13rem) translateY(9rem) rotate(-7.137deg);
+  width: 400px;
+  height: 300px;
+  transition: 1s;
+}
+
+.pan2 {
+  display: flex;
+  position: absolute;
+  transform: translateX(13rem) translateY(-15rem) rotate(-7.137deg);
+  width: 11.9375rem;
+  height: 11.125rem;
+  transition: 1s;
+}
+
+/******************************************************************************/
+/*                         MEDIA QUERY                                        */
+/******************************************************************************/
+
+/************************************/
+/*            SCREEN 723            */
+/************************************/
+
+@media (max-width: 723px) {
+  .helado {
+    transform: translateX(4rem) translateY(10rem) rotate(-12.137deg) scale(0.9);
+  }
+
+  .pan1 {
+    transform: translateX(-9rem) translateY(2rem) rotate(-7.137deg);
+  }
+
+  .pan2 {
+    transform: translateX(5rem) translateY(-13rem) rotate(-7.137deg);
+  }
+
+  
+}
+
+/************************************/
+/*            SCREEN 400            */
+/************************************/
+
+@media (max-width: 400px) {
+  .pan2 {
+    transform: translateX(4rem) translateY(-15rem) rotate(-7.137deg) scale(0.6);
+  }
+  .helado {
+    width: 9.625rem;
+    height: 9.625rem;
+    transform: translateX(4rem) translateY(10rem) rotate(-12.137deg);
+  }
+  .pan1 {
+    transform: translateX(-5rem) translateY(2rem) rotate(-7.137deg) scale(0.7);
+  }
+ 
+}

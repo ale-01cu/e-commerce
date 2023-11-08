@@ -1,0 +1,392 @@
+:root {
+  /* Style Background-color Product */
+  --Light-IceCream: #99cae5;
+  --Light-Bread: #e5ab99;
+
+  /* Card Producto Color */
+  --Light-IceCream-Producto: #c1def9;
+  --Dark-IceCream-Producto: #95afc7;
+
+  --Light-Bread-Producto: #f9d5c1;
+  --Dark-Bread-Producto: #e7a886;
+  
+}
+
+
+h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.container {
+  overflow: hidden;
+  background: var(--Light-IceCream);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: rgb(206, 223, 250, 0.5);
+  backdrop-filter: blur(6px);
+  z-index: 10;
+  box-shadow: -26px 20px 72px 0px rgba(157, 42, 42, 0.1),
+    -104px 79px 131px 0px rgba(157, 42, 42, 0.09),
+    -235px 179px 177px 0px rgba(157, 42, 42, 0.05),
+    -418px 318px 210px 0px rgba(157, 42, 42, 0.01),
+    -653px 497px 230px 0px rgba(157, 42, 42, 0);
+}
+
+.bread1 {
+  position: fixed;
+  width: 550px;
+  height: 450px;
+  z-index: 1;
+  transform: translateY(350px) translateX( -870px );
+}
+
+.bread2 {
+  width: 350px;
+  height: 200px;
+  position: fixed;
+  z-index: 1;
+  transform: translateY(-350px) translateX(890px);
+}
+
+.icecream {
+  width: 350px;
+  height: 350px;
+  position: fixed;
+  z-index: 1;
+  transform: translateY(350px) translateX(890px);
+}
+
+.container-bread {
+  background: var(--Light-Bread);
+}
+
+.container-bread .card:hover .information .ingredients {
+  height: 500px;
+  transform: translateY(-30px);
+  background: #e7a886;
+}
+
+.container-bread .card {
+  background: var(--Light-Bread-Producto);
+}
+
+.container-bread .card:hover {
+  background: var(--Dark-Bread-Producto);
+}
+
+.container-bread .container-product h1 {
+  background-clip: text;
+  background: linear-gradient(320deg, #da5b17cc, #e49367);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.container-bread .section-usercard {
+  background: var(--Light-Bread);
+}
+
+.container-bread .section-cart__Cart {
+  & h4 {
+    background-clip: text;
+    background: linear-gradient(320deg, #da5b17cc, #e49367);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+
+.container-bread .take {
+  background: var(--Light-Bread-Producto);
+}
+
+.container-bread .take:active {
+  background: var(--Dark-Bread-Producto);
+}
+
+.container-bread select {
+  background: var(--Light-Bread-Producto);
+}
+
+.container-bread select:active {
+  background: var(--Dark-Bread-Producto);
+}
+
+.container-bread .container-product-cart {
+  background: #f9d4c148;
+}
+
+.container-bread .container-product-cart button {
+  background: var(--Light-Bread-Producto);
+}
+
+.container-bread .container-product-cart button:active {
+  background: var(--Dark-Bread-Producto);
+}
+
+.container-bread .container-ticket-info {
+  background: var(--Light-Bread);
+}
+
+.container-bread .container-ticket-info:hover,
+.container-bread .container-ticket-info:active {
+  background: var(--Dark-Bread-Producto);
+}
+
+/*****************************************************************************/
+/*                         MEDIA QUERY                                       */
+/*****************************************************************************/
+
+/************************************/
+/*            SCREEN 1700           */
+/************************************/
+@media screen and (max-width: 1700px) {
+  .bread1 {
+    width: 450px;
+    height: 450px;
+    position: fixed;
+    transform: translateY(300px) translateX(-750px);
+  }
+
+  .bread2 {
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    transform: translateY(-360px) translateX(750px);
+  }
+
+  .icecream {
+    width: 450px;
+    height: 450px;
+    position: fixed;
+    transform: translateY(280px) translateX(750px);
+  }
+
+}
+
+/************************************/
+/*            SCREEN 1500           */
+/************************************/
+@media screen and (max-width: 1700px) {
+  .bread1 {
+    width: 450px;
+    height: 450px;
+    position: fixed;
+    transform: translateY(300px) translateX(-650px);
+  }
+
+  .bread2 {
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    transform: translateY(-360px) translateX(650px);
+  }
+
+  .icecream {
+    width: 450px;
+    height: 450px;
+    position: fixed;
+    transform: translateY(280px) translateX(650px);
+  }
+
+}
+/************************************/
+/*            SCREEN 1368           */
+/************************************/
+
+@media screen and (max-width: 1368px) {
+  .bread1 {
+    width: 450px;
+    height: 450px;
+    position: fixed;
+    transform: translateY(250px) translateX(-630px);
+  }
+
+  .bread2 {
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    transform: translateY(-360px) translateX(600px);
+  }
+
+  .icecream {
+    width: 450px;
+    height: 450px;
+    position: fixed;
+    transform: translateY(280px) translateX(620px);
+  }
+
+}
+
+
+/************************************/
+/*            SCREEN 1225           */
+/************************************/
+
+@media screen and (max-width: 1225px) {
+  .bread1 {
+    width: 450px;
+    height: 450px;
+    position: fixed;
+    transform: translateY(250px) translateX(-530px);
+  }
+
+  .bread2 {
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    transform: translateY(-350px) translateX(580px);
+  }
+
+  .icecream {
+    width: 450px;
+    height: 450px;
+    position: fixed;
+    transform: translateY(280px) translateX(560px);
+  }
+
+}
+
+
+/************************************/
+/*            SCREEN 1100           */
+/************************************/
+@media screen and (max-width: 1100px) {
+  .bread1 {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    transform: translateY(250px) translateX(-430px);
+  }
+
+  .bread2 {
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    transform: translateY(-350px) translateX(480px);
+  }
+
+  .icecream {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    transform: translateY(280px) translateX(480px);
+  }
+
+}
+
+/************************************/
+/*            SCREEN 900            */
+/************************************/
+@media screen and (max-width: 900px) {
+  .bread1 {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    transform: translateY(250px) translateX(-330px);
+  }
+
+  .bread2 {
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    transform: translateY(-350px) translateX(380px);
+  }
+
+  .icecream {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    transform: translateY(280px) translateX(380px);
+  }
+
+}
+
+/************************************/
+/*            SCREEN 720            */
+/************************************/
+@media screen and (max-width: 720px) {
+  .bread1 {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    transform: translateY(250px) translateX(-250px);
+  }
+
+  .bread2 {
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    transform: translateY(-350px) translateX(340px);
+  }
+
+  .icecream {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    transform: translateY(280px) translateX(340px);
+  }
+
+}
+
+/************************************/
+/*            SCREEN 650            */
+/************************************/
+@media screen and (max-width: 650px) {
+  .bread1 {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    transform: translateY(250px) translateX(-250px);
+  }
+
+  .bread2 {
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    transform: translateY(-350px) translateX(250px);
+  }
+
+  .icecream {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    transform: translateY(280px) translateX(250px);
+  }
+
+}
+
+/************************************/
+/*            SCREEN 480            */
+/************************************/
+@media screen and (max-width: 480px) {
+  .bread1 {
+    width: 350px;
+    height: 350px;
+    position: fixed;
+    transform: translateY(200px) translateX(-200px);
+  }
+
+  .bread2 {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    transform: translateY(-250px) translateX(190px);
+  }
+
+  .icecream {
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    transform: translateY(280px) translateX(200px);
+  }
+}
