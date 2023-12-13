@@ -161,3 +161,4 @@ cython_debug/
 #.idea/
 .vscode
 static/
+apps/orders/migrations/0004_remove_historicalorder_address_line_2_and_more.py

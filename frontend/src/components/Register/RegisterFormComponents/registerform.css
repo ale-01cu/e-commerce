@@ -1,6 +1,7 @@
 .register-container-form {
   width: 100%;
-  flex-wrap: wrap;
+  height: 100%;
+  margin: 30px 20px 20px 20px;
   min-width: 200px;
   max-width: 500px;
   border-radius: 20px;
@@ -8,12 +9,10 @@
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(7.6px);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  flex-wrap: wrap;
 }
 
 .register-container-form h1 {
   text-align: center;
-  margin: 1rem 0;
   font-size: 40px;
   color: var(--gray-1);
   font-family: "Montserrat Alternates", sans-serif;
@@ -21,13 +20,12 @@
 
 .register-container-form .form-register-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0 0.5rem;
   width: 80%;
   margin: 0 auto;
-  padding: 10%;
+  padding: 0 10% 10% 10%;
   border: none;
   border-radius: 5px;
   text-align: center;
@@ -118,6 +116,12 @@ input:focus {
   border: 3px solid var(--White, #fff);
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
+  transition: all 0.2s;
+}
+
+.button-container button[type="submit"]:hover {
+  background-color: transparent;
+  scale: 1.02;
 }
 
 .field_error {
@@ -141,6 +145,15 @@ margin-bottom: 15px;
   margin: 5px;
 }
 
+#forgot-password {
+  width: max-content;
+  align-self: flex-end;
+}
+
+#forgot-password span{
+
+}
+
 /******************************************************************************/
 /*                         MEDIA QUERY                                        */
 /******************************************************************************/
@@ -152,7 +165,6 @@ margin-bottom: 15px;
   .register-container-form {
     margin: 1rem;
     width: 80%;
-    height: 90%;
     overflow: auto;
   }
 }
@@ -165,7 +177,6 @@ margin-bottom: 15px;
   .register-container-form {
     margin: 1rem;
     width: 80%;
-    height: 90%;
     overflow: auto;
   }
 
@@ -190,6 +201,7 @@ margin-bottom: 15px;
 
   span {
     font-size: 13px;
+    color: aqua;
   }
 
   .form-register-container div {

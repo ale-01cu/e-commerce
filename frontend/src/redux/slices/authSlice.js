@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { setMessage } from "./messageSlice";
-
+import { toast } from "sonner";
 import AuthService from "../../services/auth.service";
 import { getProfile } from "./profileSlice";
 
@@ -52,7 +52,14 @@ export const register = createAsyncThunk(
         phone_number,
         birthdate
       );
-      thunkAPI.dispatch(setMessage("Se ha creado su cuenta con exito. Revise su curreo para activarla"));
+      thunkAPI.dispatch(
+        setMessage(
+          "Se ha creado su cuenta con exito. Revise su correo para activarla"
+        )
+      );
+      toast.success(
+        "Se ha creado su cuenta con exito. Revise su correo para activarla"
+      );
       thunkAPI.dispatch(remove_auth_loading());
       return response.data;
     } catch (error) {
@@ -63,6 +70,7 @@ export const register = createAsyncThunk(
         error.message ||
         error.toString();
       thunkAPI.dispatch(setMessage("Ocurrio un error al crear su cuenta"));
+      toast.error("Ocurrio un error al crear su cuenta");
       thunkAPI.dispatch(remove_auth_loading());
       return thunkAPI.rejectWithValue();
     }
@@ -91,8 +99,9 @@ export const login = createAsyncThunk(
       localStorage.removeItem("refresh");
       console.log(error);
       let message;
-      if (error.response.status === 401) message = "Usuario no permitido";
+      if (error.response && error.response.status === 401) message = "Usuario no permitido";
       else message = "Error que ni idea";
+      toast.error(message);
       thunkAPI.dispatch(setMessage(message));
       return thunkAPI.rejectWithValue();
     }
@@ -104,10 +113,13 @@ export const activate = createAsyncThunk(
   async ({ uid, token }, thunkAPI) => {
     try {
       const response = await AuthService.activate(uid, token);
-      if (response.status === 204)
+      if (response.status === 204) {
         thunkAPI.dispatch(setMessage("Se activó la cuenta correctamente"));
-      else
+        toast.success("Se activó la cuenta correctamente");
+      } else {
+        toast.error("Ocurrió un error al activar la cuenta");
         thunkAPI.dispatch(setMessage("Ocurrió un error al activar la cuenta"));
+      }
     } catch (error) {
       const message =
         (error.response &&
@@ -115,6 +127,7 @@ export const activate = createAsyncThunk(
           error.response.data.message) ||
         error.message ||
         error.toString();
+      toast.error("Ocurrió un error al activar la cuenta");
       thunkAPI.dispatch(setMessage("Ocurrió un error al activar la cuenta"));
       return thunkAPI.rejectWithValue();
     }

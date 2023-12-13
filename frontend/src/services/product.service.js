@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL = "http://localhost:8000/";
-
+const access = localStorage;
 const check_product_all = () => {
   return axios
     .get(API_URL + "/api/products/", {
@@ -15,7 +15,7 @@ const check_product_all = () => {
 };
 const check_product_icecream = () => {
   return axios
-    .get(API_URL + "/api/products/?category=2", {
+    .get(API_URL + "/api/products/?category=1", {
       headers: {
         "Content-Type": "application/json",
       },
@@ -26,7 +26,7 @@ const check_product_icecream = () => {
 };
 const check_product_bread = () => {
   return axios
-    .get(API_URL + "/api/products/?category=1", {
+    .get(API_URL + "/api/products/?category=2", {
       headers: {
         "Content-Type": "application/json",
       },
@@ -35,10 +35,43 @@ const check_product_bread = () => {
       return response.data;
     });
 };
-const save_order=()=>{
-  
-}
+const save_order = (
+  order_items,
+  first_name,
+  last_name,
+  address_line_1,
+  province,
+  shipping_price
+) => {
+  const access = JSON.parse(localStorage.getItem("access"));
+  return axios
+    .post(
+      API_URL + "/api/orders/",
+      {
+        order_items,
+        first_name,
+        last_name,
+        address_line_1,
+        province,
+        shipping_price,
+      },
+      {
+        headers: {
+          Authorization: "Bearer " + access,
+          Accept: "application/json",
+        },
+      }
+    )
+    .then((response) => {
+      return response.data;
+    });
+};
 
-const ProductService = { check_product_all,check_product_icecream,check_product_bread };
+const ProductService = {
+  check_product_all,
+  check_product_icecream,
+  check_product_bread,
+  save_order,
+};
 
 export default ProductService;

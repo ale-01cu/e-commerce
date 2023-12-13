@@ -4,11 +4,10 @@
 }
 
 .container-form {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   overflow: auto;
   background: linear-gradient(252deg, #99b7ce 0%, #db9989 63.11%);
   font-family: "Montserrat Alternates", sans-serif;

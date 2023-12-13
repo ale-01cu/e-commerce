@@ -8,7 +8,6 @@ export function PageRegister(){
     return(
         
         <div className="container-form">
-
             <div className="pan1">
                 <img src={pan1} alt="" /> 
             </div>

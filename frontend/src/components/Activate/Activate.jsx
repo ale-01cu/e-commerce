@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { activate } from "../../redux/slices/authSlice";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { Toaster } from "sonner";
 export default function Activate() {
   const [isActivated, setisActivated] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -17,15 +18,19 @@ export default function Activate() {
       .unwrap()
       .then(() => {
         setisActivated(true);
-        navigate("/");
+        setTimeout(() => {
+          navigate("/");
+        }, 5000);
       })
       .catch(() => {
         setLoading(false);
+        
       });
   };
 
   return (
     <>
+      <Toaster position="top-center" expand="true" richColors="true" />
       <button onClick={activate_account}>Activar cuenta</button>
     </>
   );

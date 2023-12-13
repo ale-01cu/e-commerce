@@ -18,7 +18,7 @@ const {clearCart} = userCart()
                         <span> Su orden</span>
                     </div>
                     <button className='clear_cart_icon' title='Limpiar Carrito' onClick={()=>clearCart()}>
-                        <img src={ClearCartIcon} alt="" srcset="" className='transitionimg'/>
+                        <img src={ClearCartIcon} alt="" srcSet="" className='transitionimg'/>
                     </button>
                 </div>
 

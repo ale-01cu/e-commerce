@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 const API_URL = "http://localhost:8000";
 
 const check_authenticated = () => {
@@ -46,6 +47,7 @@ const getUser = () => {
     .then((response) => {
       if (response.status === 200)
         localStorage.setItem("user", JSON.stringify(response.data));
+        
       return response.data;
     });
 };

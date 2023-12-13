@@ -5,7 +5,10 @@ import { register } from "../../../redux/slices/authSlice";
 import { clearMessage } from "../../../redux/slices/messageSlice";
 import { Link, useNavigate } from "react-router-dom";
 import { Formik, Field, Form, ErrorMessage } from "formik";
+import { Toaster } from "sonner";
 import * as Yup from "yup";
+
+
 export function Register() {
   let navigate = useNavigate();
   const [loading, setLoading] = useState(false);
@@ -17,6 +20,7 @@ export function Register() {
   useEffect(() => {
     dispatch(clearMessage());
   }, [dispatch]);
+
   const initialValues = {
     first_name: "",
     lasttname: "",
@@ -26,40 +30,47 @@ export function Register() {
     phone_number: "",
     birthdate: "",
   };
+
   const regexp = new RegExp(
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z\d]).{8,}$/
   );
   const regext = new RegExp(/\+53\d{8}/);
+
+
   const validationSchema = Yup.object().shape({
-    first_name: Yup.string()
-      .test(
-        "len",
-        "El usuario debe tener entre 3 y 20 caracteres",
-        (val) =>
-          val && val.toString().length >= 3 && val.toString().length <= 20
-      )
+    first_name: Yup
+      .string()
+      .min(3)
+      .max(20)
       .required("Ingresa un usuario válido"),
-    last_name: Yup.string().required("Rellena este campo"),
-    email: Yup.string()
+    last_name: Yup
+      .string()
+      .required("Rellena este campo"),
+    email: Yup
+      .string()
       .email("El correo es incorrecto")
       .required("Ingresa un correo válido"),
-    password: Yup.string()
-      .test(
-        "len",
-        "La contraseña debe tener al menos 6 caracteres y no más de 40",
-        (val) =>
-          val && val.toString().length >= 6 && val.toString().length <= 40
-      )
+    password: Yup
+      .string()
+      .min(6)
+      .max(40)
       .matches(regexp, "Contraseña débil")
       .required("Ingresa una contraseña válida"),
-    re_password: Yup.string()
+    re_password: Yup.
+      string()
       .required("Vuelva a insertar su contraseña")
       .oneOf([Yup.ref("password"), null], "Las contraseñas no coinciden"),
-    birthdate: Yup.date().required("ingresa tu cumpleaños"),
-    phone_number: Yup.string()
+    birthdate: Yup
+      .date()
+      .required("ingresa tu cumpleaños"),
+    phone_number: Yup
+      .string()
       .max(11, "Telefono incorrecto")
-      .matches(regext, "Telefono incorrecto"),
+      .matches(regext, "Telefono incorrecto")
+      .required('Este campo es requerido.')
   });
+
+
   const handleRegister = (formValue) => {
     const {
       first_name,
@@ -70,6 +81,7 @@ export function Register() {
       phone_number,
       birthdate,
     } = formValue;
+
     setSuccessful(false);
     dispatch(
       register({
@@ -90,9 +102,13 @@ export function Register() {
         setSuccessful(false);
       });
   };
+
+
+
   return (
     <div className="register-container-form">
-      <h1>Registrarte</h1>
+      <Toaster position="top-center" expand="true" richColors="true" />
+      <h1>Registrate</h1>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
@@ -147,7 +163,7 @@ export function Register() {
             <label htmlFor="phone_number">Teléfono</label>
             <Field
               name="phone_number"
-            // maxLength={11}
+              // maxLength={11}
             >
               {({ field, form, meta }) => (
                 <div>
@@ -173,7 +189,7 @@ export function Register() {
             <Field
               name="password"
 
-            //pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$"
+              //pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$"
             >
               {({ field, form, meta }) => (
                 <div>
@@ -206,9 +222,6 @@ export function Register() {
                     placeholder="Confirmar contraseña"
                     {...field}
                   ></input>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" width={30} height={30} viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="pass">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
                 </div>
               )}
             </Field>

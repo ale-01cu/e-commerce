@@ -46,7 +46,7 @@ export function UserCard() {
       </div>
 
       <button className="Sign_off" title='Cerrar sesión' onClick={handleLogout}>
-        <img src={logoutimg} alt="" srcset="" />
+        <img src={logoutimg} alt="" srcSet="" />
       </button>
 
     </div>
