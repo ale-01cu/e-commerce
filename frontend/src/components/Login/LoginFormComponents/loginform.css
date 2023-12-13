@@ -4,6 +4,7 @@
 .login-form-container {
   padding: 2rem 0;
   width: 25.625rem;
+  min-width: 20rem;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(7.6px);
@@ -156,8 +157,11 @@ input:-ms-autofill:focus {
 
 @media (max-width: 400px) {
   .login-form-container {
-    max-width: 318px;
-    max-height: 414px;
+    width: 90%;
+  }
+
+  .container-formik {
+    padding: 0 2rem;
   }
 
   .login-form-container h1 {

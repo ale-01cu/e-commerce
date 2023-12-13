@@ -97,7 +97,7 @@ export function Login() {
                 id="loadingLogin"
                 className={loading ? "box box-active" : "box next"}
               >
-                <p>adasdasd</p>
+                <p>Cargando</p>
               </span>
             </div>
           </Form>
