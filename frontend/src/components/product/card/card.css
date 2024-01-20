@@ -1,8 +1,6 @@
 .card {
   color: #fff;
   margin-top: 9rem;
-  margin-left: 3rem;
-  margin-right: 10px;
   border-radius: 40px;
   transform: scale(0.6);
   display: flex;
@@ -26,9 +24,8 @@
 .card:hover,
 .card:focus {
   display: flex;
-  width: 320px;
-  height: 550px;
   z-index: 10000;
+  scale: 110%;
   border-radius: 53.333px;
   background: #95afc7;
   margin-right: 30px;
@@ -98,7 +95,7 @@
   opacity: 0;
   color: #000;
   font-weight: bold;
-  transform: translateY(70px) !important;
+  transform: translateY(20px) !important;
   overflow: hidden;
   z-index: 1000;
 }
@@ -221,7 +218,6 @@
 }
 
 .card:hover .section-likes {
-  margin-top: 170px;
   transform: translateY(130px);
   border-radius: 46.876px;
   width: 90%;

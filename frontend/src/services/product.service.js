@@ -1,10 +1,20 @@
 import axios from "axios";
 
 const API_URL = "http://localhost:8000/";
-const access = localStorage;
 const check_product_all = () => {
   return axios
     .get(API_URL + "/api/products/", {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+    .then((response) => {
+      return response.data;
+    });
+};
+const check_category_all = () => {
+  return axios
+    .get(API_URL + "/api/categorys/", {
       headers: {
         "Content-Type": "application/json",
       },
@@ -72,6 +82,7 @@ const ProductService = {
   check_product_icecream,
   check_product_bread,
   save_order,
+  check_category_all
 };
 
 export default ProductService;

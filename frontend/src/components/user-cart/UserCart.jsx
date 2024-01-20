@@ -20,7 +20,7 @@ export function UserCart() {
 
     <>{isLoggedIn &&
 
-      <div id='container-usercart' className='container-usercart '>
+      <div id='container-usercart' className='container-usercart hidden'>
         <aside className='container-usercart-info'>
           <UserCard />
           <Cart />

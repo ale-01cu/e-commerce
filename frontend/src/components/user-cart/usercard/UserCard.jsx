@@ -18,7 +18,11 @@ export function UserCard() {
     
     <div className='section-usercard'>
 
-      <button title='Ir Atras' className="usercard_backIcon" onClick={HiddenUserCard}>
+      <button 
+        title='Ir Atras' 
+        className="usercard_backIcon" 
+        onClick={HiddenUserCard}
+      >
         <BackIcon />
       </button>
 
@@ -32,16 +36,16 @@ export function UserCard() {
 
         ) : (
 
-          <p className="section-usercard__chartName" >
+          <span className="section-usercard__chartName" >
             {profile.user.first_name.charAt(0)}
-          </p>
+          </span>
         )}
       </div>
 
       <div className="section_userdate">
-        <h3>
+        <span>
           {profile.user.first_name} {profile.user.last_name}
-        </h3>
+        </span>
         <p>{profile.municipality}</p>
       </div>
 

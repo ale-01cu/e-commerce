@@ -1,27 +1,30 @@
+import { useEffect, useState } from "react";
 import "./category.css";
 
 export function Category({handleClickI,handleClickB}) {
+  const [ categorys, setCategorys ] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:8000/api/categorys/')
+      .then(res => res.json())
+      .then(data => setCategorys(data))
+      .catch(error => console.log(error))
+  }, [])
   
   return (
-    <>
-      <section className="section-category">
-        <div className="section-category__icecream">
-          <img
-            src="../src/assets/img/Diseño_sin_título__4_-removebg-preview.png"
-            alt="Section de Helados Magic, podrás encontrar todos los sabores que más te gustan !"
-            onClick={handleClickI}
-          />
-          <p>Helados</p>
-        </div>
-        <div className="section-category__bread">
-          <img
-            src="../src/assets/img/Diseño_sin_título__5_-removebg-preview.png"
-            alt="Section de Panes Magic, podrás encontrar variedades de panes al gusto !"
-            onClick={handleClickB}
-          />
-          <p>Panes</p>
-        </div>
-      </section>
-    </>
+    <section className="section-category">
+      {
+        categorys.map(category => (
+          <div key={category.id} className="section-category__icecream">
+            <img
+              src={category.photo}
+              alt="Section de Helados Magic, podrás encontrar todos los sabores que más te gustan !"
+              onClick={handleClickI}
+            />
+            <p>{category.name}</p>
+          </div>
+        ))
+      }
+    </section>
   );
 }

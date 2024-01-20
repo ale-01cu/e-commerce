@@ -24,7 +24,18 @@
 }
 
 .container-product-option-svg {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.container-product-option-svg:hover {
+  scale: 110%;
+
 }
 
 .section_login_register {

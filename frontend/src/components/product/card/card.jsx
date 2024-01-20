@@ -19,7 +19,7 @@ export function Card({
 }) {
   const { isLoggedIn } = useSelector((state) => state.auth);
   return (
-    <div className="card ">
+    <div className="card">
       <img src={photo} alt="" className="img" />
       <div className="information">
         <h4>{name}</h4>

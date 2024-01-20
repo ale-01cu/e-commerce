@@ -1,7 +1,7 @@
 import { SectionProduct } from "./components/product/SectionProduct";
 import { UserCart } from "./components/user-cart/UserCart";
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { check_authenticated, refresh } from "./redux/slices/authSlice";
 import bread1 from "./assets/svg/breadloaf.svg";
 import bread2 from "./assets/svg/roundbread.svg";
@@ -11,7 +11,6 @@ import { Toaster } from 'sonner'
 
 function App() {
   const dispatch = useDispatch();
-  const { focusedProduct } = useSelector((state) => state.product);
   useEffect(() => {
     dispatch(refresh())
     dispatch(check_authenticated());

@@ -42,14 +42,14 @@ export function SliderProduct() {
             desktop: {
               breakpoint: {
                 max: 9999999,
-                min: 1367,
+                min: 1440,
               },
               items: 5,
               partialVisibilityGutter: 40,
             },
             minipc: {
               breakpoint: {
-                max: 1366,
+                max: 1439,
                 min: 960,
               },
               items: 4,

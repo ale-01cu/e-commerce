@@ -18,7 +18,6 @@ export function Payment({ tarifaZona }) {
     const order_items = cart.map((x) => {
       return { product: x.id, count: x.count };
     });
-    console.log(order_items);
     const first_name = user.first_name;
     const last_name = user.last_name;
     const address_line_1 = "Entre "+streetOne + " y " + streetTwo + " Casa:" + houseNumber;
